@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wireless on Helloworld</title><link>https://muzhi-hac.github.io/muzhi777.github.io/tags/wireless/</link><description>Recent content in Wireless on Helloworld</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 12 Nov 2025 10:10:02 +0100</lastBuildDate><atom:link href="https://muzhi-hac.github.io/muzhi777.github.io/tags/wireless/index.xml" rel="self" type="application/rss+xml"/><item><title>TKN_03）</title><link>https://muzhi-hac.github.io/muzhi777.github.io/posts/tkn_wireless_communications_03/</link><pubDate>Wed, 12 Nov 2025 10:10:02 +0100</pubDate><guid>https://muzhi-hac.github.io/muzhi777.github.io/posts/tkn_wireless_communications_03/</guid><description>&lt;h1 id="what-i-should-know"&gt;What i should know&lt;/h1&gt;
+&lt;p&gt;##Mutipath progation
+image.png
+The Transmitted Waveform is
+and the received Waveform(Path 1) is
+The received Waveform(Path 2 ) is
+The aggregate Waveform received at the receiver is +&lt;/p&gt;
+&lt;p&gt;The time difference between the delays of the two paths called
+Delay Spread($T_d$)
+and the and when time changes by 1/Td, wave changes from peak to vally&lt;/p&gt;
+&lt;p&gt;The Doppler spread is the difference of the two paths frequency
+so that is 2fc/v=Ds
+and the and when time changes by 1/2Ds, wave changes from peak to vally&lt;/p&gt;</description></item></channel></rss>

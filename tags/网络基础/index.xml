@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网络基础 on Helloworld</title><link>https://muzhi-hac.github.io/muzhi777.github.io/tags/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/</link><description>Recent content in 网络基础 on Helloworld</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 11 Nov 2025 22:05:37 +0100</lastBuildDate><atom:link href="https://muzhi-hac.github.io/muzhi777.github.io/tags/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml"/><item><title>TKN 无线网络基础</title><link>https://muzhi-hac.github.io/muzhi777.github.io/posts/tkn_wireless/</link><pubDate>Tue, 11 Nov 2025 22:05:37 +0100</pubDate><guid>https://muzhi-hac.github.io/muzhi777.github.io/posts/tkn_wireless/</guid><description>&lt;h2 id="项目背景"&gt;项目背景&lt;/h2&gt;
+&lt;p&gt;这是一个关于 TKN（Telecommunication Networks）无线通信的系列笔记，用来记录常见的概念与实践方案。&lt;/p&gt;
+&lt;h2 id="学习目标"&gt;学习目标&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;理解无线通信系统的基本组成&lt;/li&gt;
+&lt;li&gt;了解常见的调制方式与信道模型&lt;/li&gt;
+&lt;li&gt;整理在实践中遇到的网络调优经验&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更多内容会在后续文章中逐步补充。&lt;/p&gt;</description></item></channel></rss>

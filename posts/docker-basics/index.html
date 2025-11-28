@@ -1,0 +1,84 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>Docker 基础教程 | Helloworld</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content='Docker 简介
+Docker 是一个开源的应用容器引擎，让开发者可以打包应用及其依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上。
+Docker 核心概念
+镜像（Image）
+Docker 镜像是一个只读的模板，用于创建 Docker 容器。
+容器（Container）
+容器是镜像的运行实例，可以被创建、启动、停止、删除。
+仓库（Repository）
+Docker 仓库用来保存镜像，类似于 Git 仓库。
+常用 Docker 命令
+# 拉取镜像
+docker pull nginx
+
+# 运行容器
+docker run -d -p 80:80 nginx
+
+# 查看运行中的容器
+docker ps
+
+# 查看所有容器
+docker ps -a
+
+# 停止容器
+docker stop <container_id>
+
+# 删除容器
+docker rm <container_id>
+Dockerfile 示例
+FROM node:16-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD ["node", "index.js"]
+构建和运行
+# 构建镜像
+docker build -t my-app .
+
+# 运行容器
+docker run -p 3000:3000 my-app
+总结
+Docker 让应用的部署变得简单、一致和可重复。通过容器化，我们可以确保应用在任何环境中都能以相同的方式运行。'><meta name=generator content="Hugo 0.152.2"><meta name=robots content="index, follow"><link rel=stylesheet href=https://muzhi-hac.github.io/muzhi777.github.io/ananke/css/main.min.efe4d852f731d5d1fbb87718387202a97aafd768cdcdaed0662bbe6982e91824.css><link rel=canonical href=https://muzhi-hac.github.io/muzhi777.github.io/posts/docker-basics/><meta property="og:url" content="https://muzhi-hac.github.io/muzhi777.github.io/posts/docker-basics/"><meta property="og:site_name" content="Helloworld"><meta property="og:title" content="Docker 基础教程"><meta property="og:description" content='Docker 简介 Docker 是一个开源的应用容器引擎，让开发者可以打包应用及其依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上。
+Docker 核心概念 镜像（Image） Docker 镜像是一个只读的模板，用于创建 Docker 容器。
+容器（Container） 容器是镜像的运行实例，可以被创建、启动、停止、删除。
+仓库（Repository） Docker 仓库用来保存镜像，类似于 Git 仓库。
+常用 Docker 命令 # 拉取镜像 docker pull nginx # 运行容器 docker run -d -p 80:80 nginx # 查看运行中的容器 docker ps # 查看所有容器 docker ps -a # 停止容器 docker stop <container_id> # 删除容器 docker rm <container_id> Dockerfile 示例 FROM node:16-alpine WORKDIR /app COPY package*.json ./ RUN npm install COPY . . EXPOSE 3000 CMD ["node", "index.js"] 构建和运行 # 构建镜像 docker build -t my-app . # 运行容器 docker run -p 3000:3000 my-app 总结 Docker 让应用的部署变得简单、一致和可重复。通过容器化，我们可以确保应用在任何环境中都能以相同的方式运行。'><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-11-11T22:16:23+01:00"><meta property="article:modified_time" content="2025-11-11T22:16:23+01:00"><meta property="article:tag" content="Docker"><meta property="article:tag" content="容器化"><meta property="article:tag" content="DevOps"><meta itemprop=name content="Docker 基础教程"><meta itemprop=description content='Docker 简介 Docker 是一个开源的应用容器引擎，让开发者可以打包应用及其依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上。
+Docker 核心概念 镜像（Image） Docker 镜像是一个只读的模板，用于创建 Docker 容器。
+容器（Container） 容器是镜像的运行实例，可以被创建、启动、停止、删除。
+仓库（Repository） Docker 仓库用来保存镜像，类似于 Git 仓库。
+常用 Docker 命令 # 拉取镜像 docker pull nginx # 运行容器 docker run -d -p 80:80 nginx # 查看运行中的容器 docker ps # 查看所有容器 docker ps -a # 停止容器 docker stop <container_id> # 删除容器 docker rm <container_id> Dockerfile 示例 FROM node:16-alpine WORKDIR /app COPY package*.json ./ RUN npm install COPY . . EXPOSE 3000 CMD ["node", "index.js"] 构建和运行 # 构建镜像 docker build -t my-app . # 运行容器 docker run -p 3000:3000 my-app 总结 Docker 让应用的部署变得简单、一致和可重复。通过容器化，我们可以确保应用在任何环境中都能以相同的方式运行。'><meta itemprop=datePublished content="2025-11-11T22:16:23+01:00"><meta itemprop=dateModified content="2025-11-11T22:16:23+01:00"><meta itemprop=wordCount content="93"><meta itemprop=keywords content="Docker,容器化,DevOps"><meta name=twitter:card content="summary"><meta name=twitter:title content="Docker 基础教程"><meta name=twitter:description content='Docker 简介 Docker 是一个开源的应用容器引擎，让开发者可以打包应用及其依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上。
+Docker 核心概念 镜像（Image） Docker 镜像是一个只读的模板，用于创建 Docker 容器。
+容器（Container） 容器是镜像的运行实例，可以被创建、启动、停止、删除。
+仓库（Repository） Docker 仓库用来保存镜像，类似于 Git 仓库。
+常用 Docker 命令 # 拉取镜像 docker pull nginx # 运行容器 docker run -d -p 80:80 nginx # 查看运行中的容器 docker ps # 查看所有容器 docker ps -a # 停止容器 docker stop <container_id> # 删除容器 docker rm <container_id> Dockerfile 示例 FROM node:16-alpine WORKDIR /app COPY package*.json ./ RUN npm install COPY . . EXPOSE 3000 CMD ["node", "index.js"] 构建和运行 # 构建镜像 docker build -t my-app . # 运行容器 docker run -p 3000:3000 my-app 总结 Docker 让应用的部署变得简单、一致和可重复。通过容器化，我们可以确保应用在任何环境中都能以相同的方式运行。'></head><body class="ma0 avenir bg-near-white production"><header><div class=bg-black><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l center items-center justify-between"><a href=https://muzhi-hac.github.io/muzhi777.github.io/ class="f3 fw2 hover-white white-90 dib no-underline">Helloworld</a><div class="flex-l items-center"><ul class="pl0 mr3"><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white white-90 no-underline" href=https://muzhi-hac.github.io/muzhi777.github.io/ title="首页 page">首页</a></li><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white white-90 no-underline" href=https://muzhi-hac.github.io/muzhi777.github.io/categories/devops/ title="DevOps page">DevOps</a></li><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white white-90 no-underline" href=https://muzhi-hac.github.io/muzhi777.github.io/categories/golang/ title="Golang page">Golang</a></li><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white white-90 no-underline" href=https://muzhi-hac.github.io/muzhi777.github.io/categories/tkn/ title="TKN page">TKN</a></li></ul><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="flex-l mw8 center ph3 flex-wrap justify-between"><header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu">Posts</aside><div id=sharing class="mt3 ananke-socials"></div><h1 class="f1 athelas mt3 mb1">Docker 基础教程</h1><time class="f6 mv4 dib tracked" datetime=2025-11-11T22:16:23+01:00>November 11, 2025</time></header><div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id=docker-简介>Docker 简介</h2><p>Docker 是一个开源的应用容器引擎，让开发者可以打包应用及其依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上。</p><h2 id=docker-核心概念>Docker 核心概念</h2><h3 id=镜像image>镜像（Image）</h3><p>Docker 镜像是一个只读的模板，用于创建 Docker 容器。</p><h3 id=容器container>容器（Container）</h3><p>容器是镜像的运行实例，可以被创建、启动、停止、删除。</p><h3 id=仓库repository>仓库（Repository）</h3><p>Docker 仓库用来保存镜像，类似于 Git 仓库。</p><h2 id=常用-docker-命令>常用 Docker 命令</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># 拉取镜像</span>
+</span></span><span style=display:flex><span>docker pull nginx
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 运行容器</span>
+</span></span><span style=display:flex><span>docker run -d -p 80:80 nginx
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 查看运行中的容器</span>
+</span></span><span style=display:flex><span>docker ps
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 查看所有容器</span>
+</span></span><span style=display:flex><span>docker ps -a
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 停止容器</span>
+</span></span><span style=display:flex><span>docker stop &lt;container_id&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 删除容器</span>
+</span></span><span style=display:flex><span>docker rm &lt;container_id&gt;
+</span></span></code></pre></div><h2 id=dockerfile-示例>Dockerfile 示例</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dockerfile data-lang=dockerfile><span style=display:flex><span><span style=color:#66d9ef>FROM</span> <span style=color:#e6db74>node:16-alpine</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>WORKDIR</span> <span style=color:#e6db74>/app</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> package*.json ./<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> npm install<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> . .<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>EXPOSE</span> <span style=color:#e6db74>3000</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>CMD</span> [<span style=color:#e6db74>&#34;node&#34;</span>, <span style=color:#e6db74>&#34;index.js&#34;</span>]<span style=color:#960050;background-color:#1e0010>
+</span></span></span></code></pre></div><h2 id=构建和运行>构建和运行</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># 构建镜像</span>
+</span></span><span style=display:flex><span>docker build -t my-app .
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 运行容器</span>
+</span></span><span style=display:flex><span>docker run -p 3000:3000 my-app
+</span></span></code></pre></div><h2 id=总结>总结</h2><p>Docker 让应用的部署变得简单、一致和可重复。通过容器化，我们可以确保应用在任何环境中都能以相同的方式运行。</p><ul class=pa0><li class="list di"><a href=https://muzhi-hac.github.io/muzhi777.github.io/tags/docker/ class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Docker</a></li><li class="list di"><a href=https://muzhi-hac.github.io/muzhi777.github.io/tags/%E5%AE%B9%E5%99%A8%E5%8C%96/ class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">容器化</a></li><li class="list di"><a href=https://muzhi-hac.github.io/muzhi777.github.io/tags/devops/ class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">DevOps</a></li></ul><div class="mt6 instapaper_ignoref"></div></div><aside class="w-30-l mt6-l"><div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links"><p class="f5 b mb3">Related</p><ul class="pa0 list"><li class=mb2><a href=https://muzhi-hac.github.io/muzhi777.github.io/posts/devops-introduction/>DevOps 入门指南</a></li></ul></div></aside></article></main><footer class="bg-black bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href=https://muzhi-hac.github.io/muzhi777.github.io/>&copy; Helloworld 2025</a><div><div class=ananke-socials></div></div></div></footer></body></html>
